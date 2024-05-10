@@ -13,13 +13,15 @@ const layout = ({ children }) => {
   return (
     <html>
         <body>
+            <Provider>
             <div className='main'>
                 <div className='gradient' />
             </div>
             <main className='app'>
-                <Nav />
+            <Nav />
                 {children}
             </main>
+            </Provider>
         </body>
     </html>
   )
